@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Employee Demo",
+      "email": "employee@test.com",
+      "role": "employee"
+    },
+    {
+      "id": "2",
+      "name": "HR Demo",
+      "email": "hr@test.com",
+      "role": "hr"
+    },
+    {
+      "id": "3",
+      "name": "Admin Demo",
+      "email": "admin@test.com",
+      "role": "admin"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "0828",
+      "userId": "1",
+      "date": "2026-01-07",
+      "checkIn": "2026-01-07 21:49:10",
+      "checkOut": "2026-01-07 21:49:13",
+      "note": ""
+    },
+    {
+      "id": "dae1",
+      "userId": "1",
+      "date": "2026-01-07",
+      "checkIn": null,
+      "checkOut": null,
+      "note": ""
+    }
+  ],
+  "requests": [
+    {
+      "id": "d0a3",
+      "userId": "1",
+      "type": "LEAVE",
+      "content": "hukbkjn",
+      "status": "PENDING",
+      "approverId": null,
+      "decisionNote": "",
+      "createdAt": "2026-01-07 21:47:50"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "38e6",
+      "actorId": "1",
+      "action": "CREATE_ATTENDANCE_ROW",
+      "targetType": "attendance",
+      "targetId": "dae1",
+      "createdAt": "2026-01-07 21:47:36"
+    },
+    {
+      "id": "654f",
+      "actorId": "1",
+      "action": "CREATE_ATTENDANCE_ROW",
+      "targetType": "attendance",
+      "targetId": "0828",
+      "createdAt": "2026-01-07 21:47:36"
+    },
+    {
+      "id": "97f3",
+      "actorId": "1",
+      "action": "CREATE_REQUEST",
+      "targetType": "requests",
+      "targetId": "d0a3",
+      "createdAt": "2026-01-07 21:47:50"
+    },
+    {
+      "id": "4af0",
+      "actorId": "1",
+      "action": "CHECK_IN",
+      "targetType": "attendance",
+      "targetId": "0828",
+      "createdAt": "2026-01-07 21:49:10"
+    },
+    {
+      "id": "005e",
+      "actorId": "1",
+      "action": "CHECK_OUT",
+      "targetType": "attendance",
+      "targetId": "0828",
+      "createdAt": "2026-01-07 21:49:13"
+    }
+  ]
+}
